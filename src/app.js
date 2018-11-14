@@ -22,7 +22,7 @@ const users = JSON.parse(userData);
 app.get('/', (req, res) => res.render('index', {title: 'Account Summary', accounts}));
 
 app.get('/savings', (req, res) => {
-  res.render('account', { accounts: accounts.savings });
+  res.render('account', { account: accounts.savings });
 });
 
 app.get('/checking', (req, res) => {
