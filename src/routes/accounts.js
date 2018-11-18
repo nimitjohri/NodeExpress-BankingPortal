@@ -4,15 +4,15 @@ const router = express.Router();
 
 const { accounts } = require('../data');
 
-app.get('/savings', (req, res) => {
+router.get('/savings', (req, res) => {
   res.render('account', { account: accounts.savings });
 });
 
-app.get('/checking', (req, res) => {
+router.get('/checking', (req, res) => {
   res.render('account', { account: accounts.checking });
 });
 
-app.get('/credit', (req, res) => {
+router.get('/credit', (req, res) => {
   res.render('account', { account: accounts.credit });
 });
 
